@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <script type="module" src="./js/game.js" defer></script>
+    <script type="module" src="./js/rules.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="header--logo" />
+      <div class="score-display">
+        <p class="score-display--title">Score</p>
+        <p class="score-display--score" id="score">0</p>
+      </div>
+    </header>
+    <main>
+      <div class="game-pick">
+        <button class="token token__paper token__clickable" data-name="paper">
+          <img src="./images/icon-paper.svg" alt="paper icon" class="token--image" />
+        </button>
+        <button class="token token__scissors token__clickable" data-name="scissors">
+          <img src="./images/icon-scissors.svg" alt="scissors icon" class="token--image" />
+        </button>
+        <button class="token token__rock token__clickable" data-name="rock">
+          <img src="./images/icon-rock.svg" alt="rock icon" class="token--image" />
+        </button>
+      </div>
+      <div class="game-result">
+        <div class="column">
+          <h3 class="column--title">You Picked</h3>
+          <button class="token token__big" id="player-pick">
+            <img src="./images/icon-paper.svg" alt="player token logo" class="token--image" />
+          </button>
+        </div>
+        <div class="result">
+          <h2 class="result--display">You Lose</h2>
+          <button class="button button__reverse button__hover-red" id="reset">Play Again</button>
+        </div>
+        <div class="column">
+          <h3 class="column--title">The House Picked</h3>
+          <div class="placeholder">
+            <button class="token token__big house-pick" id="house-pick">
+              <img src="./images/icon-paper.svg" alt="house token logo" class="token--image" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button class="button button__thin button__hover-grow open-rules" id="open-rules">Rules</button>
+    <div class="overlay">
+      <div class="rules">
+        <h2 class="rules--title">Rules</h2>
+        <button type="button" class="cross" id="close-rules">
+          <img src="./images/icon-close.svg" alt="close" class="cross--image" />
+        </button>
+        <img src="./images/image-rules.svg" alt="rules" class="rules--img" />
+      </div>
+    </div>
+  </body>
+</html>

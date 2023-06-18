@@ -1,0 +1,14 @@
+.placeholder {
+  @include flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: hsla(240, 51%, 12%, 0.247);
+    border-radius: 50%;
+    height: 75%;
+    width: 75%;
+    z-index: -1;
+  }
+}

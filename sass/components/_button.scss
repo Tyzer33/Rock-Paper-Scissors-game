@@ -1,0 +1,43 @@
+.button {
+  border: 0.125rem solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.9rem 4rem;
+  font-size: 1rem;
+  letter-spacing: 0.18rem;
+
+  &__thin {
+    padding: 0.625rem 2.375rem;
+  }
+
+  &__reverse {
+    color: var(--secondary-text-color);
+    background: var(--primary-text-color);
+    border: none;
+  }
+
+  &__hover {
+    &-grow {
+      &:hover,
+      &:focus,
+      &:active {
+        transform: scale(1.05);
+      }
+    }
+
+    &-red {
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--hover-text-color);
+      }
+    }
+  }
+}
+
+.open-rules {
+  align-self: flex-end;
+
+  @media (max-width: $breakpoint) {
+    align-self: auto;
+  }
+}

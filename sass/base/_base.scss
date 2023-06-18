@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+body {
+  @include flex(column, space-between);
+  background: radial-gradient(var(--bg-gradient-int), var(--bg-gradient-ext));
+  min-height: 100svh;
+  padding: 2.875rem 2rem 2rem 2rem;
+
+  @media (max-width: $breakpoint) {
+    padding: 1.875rem 0 3.4375rem 0;
+  }
+}
+main {
+  padding: 5rem 0;
+
+  @media (max-width: $breakpoint) {
+    padding: 2rem 0;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

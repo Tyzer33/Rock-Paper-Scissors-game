@@ -1,0 +1,22 @@
+.game-pick {
+  @include flex($a: null, $w: true);
+  align-content: space-between;
+  background: no-repeat 50% 70% / 70% url(../../images/bg-triangle.svg);
+  height: 26.5rem;
+  width: 30rem;
+
+  .token__clickable:first-child {
+    margin-right: 5rem;
+  }
+
+  @media (max-width: $breakpoint) {
+    position: relative;
+    height: 17.25rem;
+    width: 19.375rem;
+    top: -3rem;
+
+    .token__clickable:first-child {
+      margin-right: 3.125rem;
+    }
+  }
+}

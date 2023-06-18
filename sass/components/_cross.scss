@@ -1,0 +1,13 @@
+.cross {
+  height: 1.1875rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: $breakpoint) {
+    order: 3;
+  }
+}

@@ -1,0 +1,16 @@
+.game-result {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: $result-breakpoint) {
+    max-width: 42.625rem;
+  }
+
+  @media (max-width: $breakpoint) {
+    width: 20.95rem;
+    position: relative;
+    top: -0.4rem;
+    align-items: flex-start;
+  }
+}

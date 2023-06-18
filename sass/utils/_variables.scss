@@ -1,0 +1,23 @@
+:root {
+  --primary-text-color: white;
+  --secondary-text-color: hsl(229, 25%, 31%);
+  --hover-text-color: hsl(349, 71%, 52%);
+
+  --bg-gradient-int: hsl(214, 47%, 23%);
+  --bg-gradient-ext: hsl(237, 49%, 15%);
+
+  --border-color: hsl(217, 16%, 45%);
+
+  --bg-score: white;
+  --score-title: hsl(229, 64%, 46%);
+
+  --paper-gradient: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+  --scissors-gradient: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+  --rock-gradient: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+  --token-shadow-color: hsla(248, 100%, 7%, 0.24);
+
+  --overlay: rgba(0, 0, 0, 0.603);
+}
+
+$breakpoint: 48rem;
+$result-breakpoint: 62.5rem;

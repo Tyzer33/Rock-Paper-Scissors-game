@@ -1,0 +1,38 @@
+.overlay {
+  @include flex;
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  visibility: hidden;
+}
+
+.rules {
+  @include flex($w: true);
+  align-content: space-between;
+  height: 25.9375rem;
+  width: 25rem;
+  border-radius: 0.625rem;
+  padding: 2rem;
+  background: white;
+
+  &--title {
+    color: var(--secondary-text-color);
+    font-size: 1.9rem;
+    margin-right: 14.625rem;
+  }
+
+  @media (max-width: $breakpoint) {
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    width: auto;
+    inset: 0 0 0 0;
+    border-radius: unset;
+    padding: 5.75rem 0 4.125rem 0;
+
+    &--title {
+      margin: 0;
+    }
+  }
+}
